@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChooChee</title>
+  	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header class="jumbotron" id="mainheader">
+     
+          <h1 class="jumboH1">Train Schedule</h1>
+     
+    </header>
+
+    <div class="container-fluid">
+        <div>
+          <div class="container">
+            <div class="panel-panel primary">
+          
+              <div class= "panel-heading">
+
+                <div class="col-xs-12" id="add train">Train Schedule</div>
+                  <table class="table">
+                    <thead>
+                       <tr>
+                          <td>Train Name</td>
+                          <td>Destination</td>
+                          <td>Frequency</td>
+                          <td>Next Arrival</td>
+                          <td>Minutes Away</td>                         
+                        </tr>
+                    </thead>
+                      <tbody>
+                       
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+
+          	<div class= "panel-heading">
+      	  		<div class="col-xs-12 " id="add train">Add Train</div>
+			      </div>
+        	<form class="form-horizontal" id="employee-info">
+
+          		<p class="text-left">Train Name</p>
+            		<input type="text" class="form-control" placeholder="eg. Thomas the Tank Engine" id="train-name">
+
+          		<p class="text-left">Destination</p>
+              		<input type="text" class="form-control" placeholder="eg. Clarksville" id="destination">
+
+          		<p class="text-left">First Train time HH:mm military time</p>
+              		<input type="text" class="form-control" placeholder="eg. 06:30" id="start-time">
+
+          		<p class="text-left">Frequency (min)</p>
+              		<input type="text" class="form-control" placeholder="eg. 10" id="frequency">
+
+          		<button class="btn btn-default" id="submit">Submit</button>
+
+        	</form>
+          </div>
+          </div>
+		</div>
+	</div>
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
